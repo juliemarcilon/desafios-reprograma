@@ -32,7 +32,6 @@ function somaIdade(){
     const soma = idade.reduce((previous, current) => previous + current, 0);
     console.log("A soma das idades é " + soma);
 }
-// somaIdade();
 
 
 function validaLogin(parametro){
@@ -44,21 +43,18 @@ function validaLogin(parametro){
         console.log('Usuário ' + login.login + ' encontrado');
     }
 }
-// validaLogin('brunohs');
 
 
 function mostraEmails(){
     const emails = users.map(user => user.email);
     console.log("Lista de emails: " + emails);
 }
-// mostraEmails();
 
 
 function contaEmailsPb(){
     const emailsPb = users.filter(user => user.email.endsWith('@pbtech.net.br'));
     console.log(emailsPb.length + " usuários possuem o email da empresa");
 }
-// contaEmailsPb();
 
 
 // DESAFIO 2
